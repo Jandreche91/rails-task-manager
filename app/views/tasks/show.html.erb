@@ -7,17 +7,33 @@
 
   <div class="container card-white py-3">
 
-    <h4>Details:</h4>
+
+
+   <div class="d-flex justify-content-between align-items-center">
+    <h4>Details for <%= @current_task.title.capitalize %>:</h4>
+    <%= link_to " Edit", edit_task_path, class: "btn btn-outline-primary btn-sm"%>
+   </div>
+
     <h6><%= @current_task.details %></h6>
+
+
+  </div>
+
+
+  <div class="container card-white mt-3">
+
+    <p class="py-4 <%=@current_task.completed ? "font-green" : "font-red"  %> "> <strong><%= @message %></strong> </p>
 
   </div>
 
 
 
-  <p class="py-4"> <strong><%= @message %></strong> </p>
+
 
 
   <div class="container text-center">
+
+
 
     <p><%= link_to "Back to the list!", tasks_path, class: "btn btn-warning" %></p>
 
