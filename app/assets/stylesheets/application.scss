@@ -1,6 +1,13 @@
 @import "bootstrap/scss/bootstrap";
 
 
+.general-list {
+  list-style: none;
+  display: flex;
+}
+
+
+
 body {
   background-color: #dadbc3;
 }
@@ -28,4 +35,18 @@ body {
 
 .font-green {
   color: #218838;
+}
+
+
+.delete-link {
+  font-size: 8px;
+  text-decoration: none !important;
+  color: black;
+}
+
+
+.delete-link:hover {
+  font-size: 8px;
+  text-decoration: none !important;
+  color: #874243;
 }

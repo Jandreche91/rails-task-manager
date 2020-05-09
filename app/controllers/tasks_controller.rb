@@ -27,6 +27,12 @@ class TasksController < ApplicationController
     @current_task = Task.find(params[:id])
     @current_task.update(task_params)
     # raise
+    redirect_to task_path(@current_task)
+  end
+
+  def destroy
+    @current_task = Task.find(params[:id])
+    @current_task.destroy
     redirect_to tasks_path
   end
 
