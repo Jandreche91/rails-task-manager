@@ -1,0 +1,30 @@
+
+<div class="container mt-4">
+
+  <h1 class="text-center">Current task:</h1>
+  <h2 class="text-center font-red"><%= @current_task.title.capitalize %></h2>
+
+
+  <div class="container card-white py-3">
+
+    <h4>Details:</h4>
+    <h6><%= @current_task.details %></h6>
+
+  </div>
+
+
+
+  <p class="py-4"> <strong><%= @message %></strong> </p>
+
+
+  <div class="container text-center">
+
+    <p><%= link_to "Back to the list!", tasks_path, class: "btn btn-warning" %></p>
+
+
+  </div>
+
+
+
+
+</div>
